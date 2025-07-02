@@ -1,0 +1,63 @@
+Os relacionamentos permitem que os dados sejam armazenados de forma organizada e estruturada, tornando-os mais fácdeis de gerenciar e recuperar.
+
+Existem três tipos principais de relacionamentos:
+Um para Um; 
+Um para Muitos;
+Muitos para Muitos;
+
+# Um para Um: 
+Ocorre quando uma entidade tem apenas uma relação com outra entidade;
+
+TB_PESSOA -> TB_ENDEREÇOS
+Cada pessoa tem um endereço
+
+Para implementar este exemplo de relacionamento, adicionamos uma FOREIGN KEY em endereços que se relaciona com a PRIMARY KEY na tabela de pessoas.
+
+CREATE TABLE pessoas (
+    id INT PRIMARY KEY,
+    endereco VARCHAR(500),
+    pessoa_id INT,
+    FOREIGN KEY(pessoa_id) REFERENCES pessoas(id)
+)
+
+# Relacionamento Um para Muitos:
+Ocorre quando uma entidade tem várias relações para outra entidade.
+Uma tabela PEDIDOS pode ter um relacionamento um para muito com uma tabela ITENS, onde cada pedido tem vários itens.
+
+Para implementar este relacionamento, podemos adicionar uma chave estrangeira na tabela ITENS que se relaciona com a chave primária da tabela PEDIDOS.
+
+CREATE TABLE pedidos(
+    id INT PRIMARY KEY,
+    data DATE
+);
+
+CREATE TABLE itens(
+    id INT PRIMARY KEY,
+    descricao VARCHAR(255),
+    quantidade INT,
+    pedido_id INT,
+    FOREIGN KEY (pedido_id) REFERENCES pedidos(id)
+);
+
+#Relacionamento Muitos para Muitos:
+Ocorre quando duas entidades têm múltiplas relações entre si.
+Uma tabela PRODUTOS pode ter um relacionamento muitos para muitos com uma tabela categoria, onde cada produto pode pertencer a várias categorias e cada categorias pode conter váris produtos.
+Para implesmentar: Criar uma tabela INTERMEDIÁRIA chamada produtos_categoria que armazena as chaves estrangerias de ambas tabelas, PRODUTOS e CATEGORIAS:
+
+CREATE TABLE PRODUTOS(
+    id INT PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE CATEGORIAS(
+    id INT PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE produtos_categorias(
+    id INT PRIMARY KEY, 
+    produto_id INT,
+    categoria_id INT,
+    FOREIGN KEY (produto_id) REFERENCES PRODUTOS(id),
+    FOREIGN KEY (categoria_id) REFERENCES CATEGORIAS(id)
+);

@@ -1,0 +1,30 @@
+1 - Isso cria um banco chamado empresa:
+CREATE DATABASE empresa;
+
+2 - para usar esse banco:
+USE empresa;
+
+3 - Para criar uma tabela, onde são guardados os id´s e os nomes dos cargos:
+CREATE TABLE setores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+Onde:
+id -> será o identificador único do setor;
+AUTO_INCREMENT -> cada novo setor recebe um ID automaticamente;
+PRIMARY KEY -> garante que o id gerado seja único;
+nome -> nome do setor (coluna do tipo TEXT com no máximo 100 caracteres)
+
+4 - Criando uma tabela com os cargos do Schema EMPRESA:
+CREATE TABLE cargos(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(200) NOT NULL,
+    salario_base DECIMAL(10, 2) not null
+);
+
+tipo DECIMAL -> Usando quando precisa de exatidão com casas decimais, especificamente em valores monetários:
+
+DECIMAL(P, S)
+P-> Precisão total, quantos dígitos no totalm TAMANHO
+S-> Quantos números depois da vírgula

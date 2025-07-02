@@ -1,0 +1,24 @@
+SEGBD => Sistema Gerenciador de Banco de Dados
+-> MySql, Oracle, MySql
+
+Modelo E / R -> Modelo Entidade Relacionamento
+Divido entre linhas e colunas
+
+colunas = classes
+Linhas = tuplas
+relação de classe com cada linha
+
+mapeamento de cada linhas na coluna pode ser feito através do VARCHAR
+VAR -> Variável
+Char -> caracteres
+Ex: Varchar(200) -> Abrange até 200 espaços de forma variável
+
+É possível armazenar grandes Objetos no banco através do BLOB e do CLOB
+
+Relacionamento:
+
+Tabela Cliente              Tabela Produto
+
+                Tabela Pedido
+                
+Relação entre as duas tabelas a partir de uma terceira tabela:

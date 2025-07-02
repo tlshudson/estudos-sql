@@ -1,0 +1,9 @@
+SQL - Structured Query Language
+Linguagem de Consulta estruturada
+
+
+Dividida em 4 partes:
+DML - DATA MANIPULATION LANGUAGE: Trabalhar com comandos do tipo: Insert, Select, Update, Delete - CRUD;
+DDL - DATA DEFINITION LANGUAGE: Usar comando com CREATE, ALTER, DROP - Estrutura e definição do esquema do banco de dados;
+DCL - DATA CONTROL LANGUAGE: Acesso ao banco de dados, permissões com GRANT, DENY, REVOKE - Administração do BD
+TCL - TRANSACTION CONTROL LANGUAGE: Gerencia mudanças como um grupo: COMMIT TRANS, ROLBACK, BEGIN TRANS0

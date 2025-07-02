@@ -1,0 +1,9 @@
+Fundamento - O que é um banco de Dados Relacional?
+Um banco de dados relacional, como o MySQL, armazena informações em TABELAS, que se relacionam entre si por meio de chaves primárias e chaves estrangeiras.
+
+Conceitos:
+ - Tabela = semelhante à uma planilha
+ - Colunas = campos como: nome, data_nascimento, identidade, etc...
+ - Linhas = registros, cada pessoa, data de nascimento de cada uma, identidades...
+ - Chave Primária (PRIMARY KEY) = identificador único por linha (ex: id);
+ - Chave Estrangeira (FOREIGN KEY) = ligação com outra tabela

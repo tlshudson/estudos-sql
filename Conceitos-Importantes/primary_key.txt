@@ -1,0 +1,17 @@
+PRIMARY KEY -> PK
+Características principais:
+
+- Chave Única de uma tabela;
+- Não pode ser vazia;
+- Não é possível mudar uma chave primária
+
+Existem possiblidade para trabalhar com coluna de Chave Primária, uma delas é a SURROGATE KEY(CHAVE SINTÉTICA / ARTIFICIAL):
+Coluna aonde os dados podem não ter tanta relevância para o usuário;
+Valor gerado para ser único na tabela, sequência de ID´s para identificação
+
+Outra possibilidade: NATURAL KEY
+Como CPF, RG -> dados reais como chave primária
+
+Chave primária serve para gerar Relacionamento entre tabelas
+Usada também para buscar valores através de índice
+

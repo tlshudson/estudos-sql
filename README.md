@@ -9,9 +9,12 @@ Aqui você encontra exemplos práticos, explicados passo a passo, para te ajudar
 - Explicações e instruções;
 - Modelos de tabela para simular os dados;
 
-## 🚀 Como usarVocê pode:
+## 🚀 Possibildades:
 1. Copiar e colar os códigos no seu banco local, recomendo MySQL.
 2. Explorar os comentários explicativos em cada arquivo `.sql`.
+
+## 🧠 Diagrama UML do Schema criado:
+![Diagrama UML](assets/Diagrama-UML-Estudo.jpg)
 
 ## ✍️ Licença
 Este repositório é livre para uso educacional. Pode clonar, adaptar e compartilhar.

@@ -8,6 +8,10 @@ Aqui você encontra exemplos práticos, explicados passo a passo, para te ajudar
 - Explicações e instruções;
 - Modelos de tabela para simular os dados;
 
+## 📂 Estrutura
+- 📂Conceitos-Importantes → Conceitos importantes e algumas anotações referentes à linguagem SQL;
+- 📂schema → Estruturação de arquivos para criação e manipulação do schema de estudos;
+
 ## 🚀 Possibildades:
 1. Copiar e colar os códigos no seu banco local, recomendo MySQL.
 2. Explorar os comentários explicativos em cada arquivo `.sql`.

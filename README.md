@@ -1,6 +1,5 @@
 # 💡 Repositório de Estudos em SQL
 
-Bem-vindo ao repositório **SQL para Todos**!  
 Aqui você encontra exemplos práticos, explicados passo a passo, para te ajudar a aprender SQL de forma simples e aplicada.
 
 ## 📘 O que você vai encontrar:
